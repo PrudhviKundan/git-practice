@@ -8,11 +8,13 @@ echo "List of Fruits are : ${FRUITS[@]}"
 echo "Count No.Of Elements in an array : ${#FRUITS[@]}"
 # Element to delete
 Non_Fruit=${FRUITS[1]}
-echo "Non-Fruite/Delete Fruite for existing list of fruits: ${Non_Fruit}"
+echo "Non-Fruit/Delete Fruite for existing list of fruits: ${Non_Fruit}"
 # Create a new array excluding the non-fruit to delete
 ACTUAL_FRUITS=()
-for fruits in "${FRUITS[@]}"; do
-  if [[ $fruits -ne "$Non_Fruit" ]]; then
+for fruits in "${FRUITS[@]}" 
+do
+  if [[ $fruits != "$Non_Fruit" ]]
+   then
     ACTUAL_FRUITS+=("$fruits")
   fi
 done
