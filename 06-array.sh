@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FRUITS=("Apple,Pineapple,Mango") #array
-echo "First Fruit is : ${Fruits[0]}"
-echo "Second Fruit is : ${Fruits[1]}"
+FRUITS=("Apple","Pineapple","Mango") #array
+echo "First Fruit is : ${fruits[0]}"
+echo "Second Fruit is : ${FRUITS[1]}"
 
-echo "List of Fruits are : ${Fruits[@]}"
+echo "List of Fruits are : ${fruits[@]}"
