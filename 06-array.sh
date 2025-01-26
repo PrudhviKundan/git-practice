@@ -11,12 +11,12 @@ Non_Fruit=${FRUITS[1]}
 echo "Updated ACTUAL FRUITS: ${Non_Fruit}"
 # Create a new array excluding the non-fruit to delete
 ACTUAL_FRUITS=()
-for FRUITS in "${ACTUAL_FRUITS[@]}"; do
-  if [[ $FRUITS != "$Non_Fruit" ]]; then
-    ACTUAL_FRUITS+=("$FRUITS")
+for fruits in "${FRUITS[@]}"; do
+  if [[ $fruits != "$Non_Fruit" ]]; then
+    ACTUAL_FRUITS+=("$fruits")
   fi
 done
 
 # Print the updated fruits
 echo "Updated ACTUAL FRUITS: ${ACTUAL_FRUITS[@]}"
-echo "After delete ceount No.Of Elements in an array : ${#FRUITS[@]}"
+echo "After delete ceount No.Of Elements in an array : ${#ACTUAL_FRUITS[@]}"
