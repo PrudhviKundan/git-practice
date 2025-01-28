@@ -18,10 +18,10 @@ CHECK_ROOT(){
 VALIDATE(){
     if [ $1 -ne 0 ] # "$1 is $?"
     then
-        echo "$2 is.. $R FAILED $N" # "$2 is 2nd parameter" 
+        echo -e "$2 is.. $R FAILED $N" # "$2 is 2nd parameter" 
         exit 1
     else 
-        echo "$2 is.. $G SUCCESS $N"
+        echo -e "$2 is.. $G SUCCESS $N" #-e is mandatory for colors
     fi
 }
 
