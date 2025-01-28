@@ -4,9 +4,9 @@ USERID=$(id -u)
 #echo "User ID is : $USERID"
 
 #variable declaration
-R="\e[31m"
-G="\e[32m"
-N="\e[0m"
+R="\e[31m
+G="\e[32m
+N="\e[0m
 
 CHECK_ROOT(){
     if [ $USERID -ne 0 ]
